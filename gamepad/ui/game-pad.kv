@@ -1,0 +1,111 @@
+<GamePad@GridLayout>:
+    id: game_pad
+    size_hint: (1, 0.3)
+    rows: 1
+    cols: 3
+    padding: 0
+    spacing: 0
+
+    GridLayout:
+        id: direction_pad
+        rows: 3
+        cols: 3
+        padding: 0
+        spacing: 0
+
+        Button:
+            id: direction_pad_left_up
+            text: 'UL'
+        
+        Button:
+            id: direction_pad_left
+            text: 'ML'
+
+        Button:
+            id: direction_pad_left_down
+            text: 'DL'
+        
+        Button:
+            id: direction_pad_up
+            text: 'UP'
+        
+        Button:
+            id: direction_pad_center
+            text: 'CT'
+
+        Button:
+            id: direction_pad_down
+            text: 'DN'
+
+        Button:
+            id: direction_pad_right_up
+            text: 'UR'
+        
+        Button:
+            id: direction_pad_right
+            text: 'MR'
+
+        Button:
+            id: direction_pad_right_down
+            text: 'DR'
+
+    GridLayout:
+        id: control_pad
+        rows: 2
+        cols: 2
+        padding: 0
+        spacing: 0
+
+        Button:
+            id: control_pad_left_trigger
+            text: 'LT'
+
+        Button:
+            id: control_pad_right_trigger
+            text: 'RT'
+
+        Button:
+            id: control_pad_left_bumper
+            text: 'LB'
+        
+        Button:
+            id: control_pad_right_bumper
+            text: 'RB'
+        
+    GridLayout:
+        id: action_pad
+        rows: 3
+        cols: 3
+        padding: 0
+        spacing: 0
+
+        Label:
+            text: ''
+        
+        Button:
+            id: action_pad_action_one
+            text: 'A1'
+
+        Label:
+            text: ''
+        
+        Button:
+            id: action_pad_action_two
+            text: 'A2'
+        
+        Label:
+            text: ''
+
+        Button:
+            id: action_pad_action_three
+            text: 'B1'
+
+        Label:
+            text: ''
+        
+        Button:
+            id: action_pad_action_four
+            text: 'B2'
+
+        Label:
+            text: '' 

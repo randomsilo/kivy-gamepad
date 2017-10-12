@@ -1,0 +1,57 @@
+<DemoScreen>
+    name: 'demo_screen'
+    BoxLayout:
+        id: screen_container
+        orientation: 'vertical'
+
+        Button:
+            id: home_button
+            text: 'Go Home'
+            size_hint: (1, 0.1)
+            background_normal: 'images/red_button_normal.png'
+            background_down: 'images/red_button_down.png'
+            on_press:
+                root.manager.current = 'home_screen'
+    
+        GridLayout:
+            id: screen_top
+            size_hint: (1, 0.1)
+            rows: 1
+            cols: 3
+            padding: 0
+            spacing: 0
+
+            BoxLayout:
+                id: screen_top_player
+                orientation: 'horizontal'
+
+                FighterName:
+                    id: player_character_name
+                    text: 'Unknown'
+
+            BoxLayout:
+                id: screen_top_round_data
+                orientation: 'horizontal'
+
+                FighterName:
+                    id: fight_round
+                    text: 'Round 1'
+
+            BoxLayout:
+                id: screen_top_opponent
+                orientation: 'horizontal'
+
+                FighterName:
+                    id: player_opponent_name
+                    text: 'Mr. Pain'
+
+        BoxLayout:
+            id: screen_fight_arena
+            size_hint: (1, 0.6)
+            orientation: 'vertical'
+
+            TitleLabel:
+                text: 'Arena Picture'
+
+        GamePad:
+            

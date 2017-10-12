@@ -1,0 +1,31 @@
+<HomeScreen>
+    name: 'home_screen'
+    BoxLayout:
+        orientation: 'vertical'
+
+        TitleLabel:
+            id: title_label 
+            text: 'Game Title'
+
+        SubTitleLabel:
+            id: subtitle_label 
+            text: 'By Whomever'
+
+        BoxLayout:
+            orientation: 'horizontal'
+
+            CommandButton:
+                id: start_button
+                text: 'Start'
+                background_normal: 'images/button_normal.png'
+                background_down: 'images/button_down.png'
+                on_press: 
+                    root.manager.current = 'demo_screen'
+            
+            CommandButton:
+                id: exit_button
+                text: 'Exit'
+                background_normal: 'images/red_button_normal.png'
+                background_down: 'images/red_button_down.png'
+                on_press: 
+                    app.pressed_exit()
