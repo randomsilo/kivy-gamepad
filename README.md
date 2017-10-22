@@ -39,7 +39,7 @@ Any and all help is appreciated.
 ### Expanded Conventions
 
 Area  | Convention | Notes
---- | ---
+--- | --- | ---
 Interface            | CamelCaseNameInf | Only abstract methods, no implementations
 Abstract Base Case   | CamelCaseNameAbc | Extends from interface, no implementations, has common helper functions
 Stock Implementation | CamelCaseNameImplStock | Extends ABC, implements INF
