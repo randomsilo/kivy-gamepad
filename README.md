@@ -52,7 +52,7 @@ Stock Implementation | CamelCaseNameImplStock | Extends ABC, implements INF
 Other Implementation | CamelCaseNameImplOther | Extends stock or ABC, implements or overrides methods
 Class Name           | CamelCaseNameCls | A stand alone class has Cls on the end of it
 Independant Behavior | CamelCaseNameMixIn | A mix in is encapsulated behavior added by inheritance with no intent to modify
-Function Name        | lowercase_with_unscores | The word function is used for functions outside of a class
-Method Name          | lowercase_with_unscores | The word method is used for functions inside of a class
+Function Name        | lowercase_with_underscores | The word function is used for functions outside of a class
+Method Name          | lowercase_with_underscores | The word method is used for functions inside of a class
 Private Variables    | _name_typehint | Private class variables with a type hint for clarity: _count_int, _money_float, _name_str, _name_inst (class instance)
 
