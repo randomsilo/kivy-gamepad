@@ -22,6 +22,12 @@ So that is what I am going to do.
 env PYTHONPATH=/shop/randomsilo/kivy-gamepad
 ```
 
+## Concept Diagrams
+
+![Basic Flow](./images/flow_w400.png)
+![Game Loop](./images/game_loop_w400.png)
+
+
 ## Contribution
 
 if you want to contribute, please make a pull request.
