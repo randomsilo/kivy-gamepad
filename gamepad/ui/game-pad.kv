@@ -14,41 +14,59 @@
         spacing: 0
 
         Button:
-            id: direction_pad_left_up
+            id: direction_pad_up_left
             text: 'UL'
-        
-        Button:
-            id: direction_pad_left
-            text: 'ML'
+            on_press: 
+                app.io_manager_impl.pressed_up_left()
 
-        Button:
-            id: direction_pad_left_down
-            text: 'DL'
-        
         Button:
             id: direction_pad_up
             text: 'UP'
-        
+            on_press: 
+                app.io_manager_impl.pressed_up()
+
+        Button:
+            id: direction_pad_up_right
+            text: 'UR'
+            on_press: 
+                app.io_manager_impl.pressed_up_right()
+
+        Button:
+            id: direction_pad_left
+            text: 'ML'
+            on_press: 
+                app.io_manager_impl.pressed_left()
+
         Button:
             id: direction_pad_center
             text: 'CT'
+            on_press: 
+                app.io_manager_impl.pressed_center()
+
+        Button:
+            id: direction_pad_right
+            text: 'MR'
+            on_press: 
+                app.io_manager_impl.pressed_right()
+
+        Button:
+            id: direction_pad_down_left
+            text: 'DL'
+            on_press: 
+                app.io_manager_impl.pressed_down_left()
 
         Button:
             id: direction_pad_down
             text: 'DN'
+            on_press: 
+                app.io_manager_impl.pressed_down()
 
         Button:
-            id: direction_pad_right_up
-            text: 'UR'
-        
-        Button:
-            id: direction_pad_right
-            text: 'MR'
-
-        Button:
-            id: direction_pad_right_down
+            id: direction_pad_down_right
             text: 'DR'
-
+            on_press: 
+                app.io_manager_impl.pressed_down_right()
+        
     GridLayout:
         id: control_pad
         rows: 2
@@ -57,20 +75,28 @@
         spacing: 0
 
         Button:
-            id: control_pad_left_trigger
-            text: 'LT'
-
-        Button:
-            id: control_pad_right_trigger
-            text: 'RT'
-
-        Button:
-            id: control_pad_left_bumper
+            id: control_pad_bumper_left
             text: 'LB'
+            on_press: 
+                app.io_manager_impl.pressed_bumper_left()
         
         Button:
-            id: control_pad_right_bumper
+            id: control_pad_bumper_right
             text: 'RB'
+            on_press: 
+                app.io_manager_impl.pressed_bumper_right()
+
+        Button:
+            id: control_pad_trigger_left
+            text: 'LT'
+            on_press: 
+                app.io_manager_impl.pressed_trigger_left()
+
+        Button:
+            id: control_pad_trigger_right
+            text: 'RT'
+            on_press: 
+                app.io_manager_impl.pressed_trigger_right()
         
     GridLayout:
         id: action_pad
@@ -84,28 +110,36 @@
         
         Button:
             id: action_pad_action_one
-            text: 'A1'
+            text: 'B'
+            on_press: 
+                app.io_manager_impl.pressed_action_one()
 
         Label:
             text: ''
         
         Button:
             id: action_pad_action_two
-            text: 'A2'
+            text: 'A'
+            on_press: 
+                app.io_manager_impl.pressed_action_two()
         
         Label:
             text: ''
 
         Button:
             id: action_pad_action_three
-            text: 'B1'
+            text: 'Y'
+            on_press: 
+                app.io_manager_impl.pressed_action_three()
 
         Label:
             text: ''
         
         Button:
             id: action_pad_action_four
-            text: 'B2'
+            text: 'X'
+            on_press: 
+                app.io_manager_impl.pressed_action_four()
 
         Label:
             text: '' 

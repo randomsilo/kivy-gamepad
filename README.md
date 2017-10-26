@@ -5,6 +5,8 @@
 
 The Kivy GamePad is an attempt to create a cross platform on-screen controller that will allow users of any device to have a game console like experience.
 
+![Early Game Pad](./images/game_pad.png)
+
 ## Installing / Getting started
 
 Clone, download, or fork this [repo](https://github.com/randomsilo/kivy-gamepad.git)

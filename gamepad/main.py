@@ -3,6 +3,8 @@ from kivy.lang import Builder
 from kivy.core.text import LabelBase
 from kivy.uix.screenmanager import ScreenManager, Screen, FadeTransition
 
+from managers import IoManager
+
 
 LabelBase.register(name="Aller",
                    fn_regular="fonts/Aller_Rg.ttf",
@@ -32,6 +34,7 @@ sm.add_widget(DemoScreen(name='demo_screen'))
 
 class GamePadApp(App):
     def build(self):
+        self.io_manager_impl = IoManager.IoManagerStock()
         return sm
 
     def pressed_home(self):
