@@ -18,16 +18,9 @@ You should see the kivy startup screen with the game name, game company, start b
 
 ## Developing
 
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
+Issues will be created with a rough design concept.  If the issue interests you please fork the code, create a working branch, and then make a pull request with the related file changes.
 
-```shell
-git clone https://github.com/your/awesome-project.git
-cd awesome-project/
-packagemanager install
-```
-
-And state what happens step-by-step.
+Any accepted pull request will result in your name being added to the list of contributors.  Just remember all code submitted will be MIT Licensed for other people to use, modify, or sell.
 
 ### Building
 
